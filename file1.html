@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Frames Example</title>
+    <style>
+        #container {
+            display: flex;
+        }
+
+        #navFrame,
+        #chapterFrame {
+            border: 1px solid #ccc;
+            height: auto;
+        }
+
+        #navFrame {
+            flex: 1;
+        }
+
+        #chapterFrame {
+            flex: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Iframe Example</h1>
+        <div id="container" style="margin-top: 50px; width: 80%;">
+            <!-- Navigation Frame -->
+            <iframe id="navFrame" src="file2.html" name="navFrame"></iframe>
+
+            <!-- Chapter Frame -->
+            <iframe id="chapterFrame" src="file3.html" name="chapterFrame"></iframe>
+        </div>
+    </center>
+</body>
+
+</html>
